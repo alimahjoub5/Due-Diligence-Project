@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Shield, Search, Lock, UserCheck, FileText, Globe, CheckCircle, Users, Eye, AlertTriangle, Award, Phone, Building2 } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -124,9 +125,11 @@ const Services = () => {
                     </div>
 
                     <div className="mt-12 text-center">
-                        <a href="/contact" className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-[#b08d4b] transition-all shadow-lg">
-                            Request Screening Proposal
-                        </a>
+                        <div className="mt-12 text-center">
+                            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-[#b08d4b] transition-all shadow-lg">
+                                Request Screening Proposal
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -162,9 +165,11 @@ const Services = () => {
                     </div>
 
                     <div className="mt-12 text-center">
-                        <a href="/contact" className="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-white/5 transition-all">
-                            Discuss Due Diligence
-                        </a>
+                        <div className="mt-12 text-center">
+                            <Link to="/contact" className="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-white/5 transition-all">
+                                Discuss Due Diligence
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
